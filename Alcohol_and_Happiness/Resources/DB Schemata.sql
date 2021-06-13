@@ -46,7 +46,8 @@ CREATE TABLE LifeExpectancy(
 
 SELECT LE.countryname, HP.HappinessScore, WH.Healthy_life_expectancy, LE.year_2019, WH.social_support, WH.Generosity, HP.beer_percapita, HP.spirit_percapita, HP.wine_percapita
 FROM worldhappinessreport2021 as WH
-right JOIN HappinessAlcoholConsumption as HP
+right JOIN HappinessAlcoholConsumption as HP    
 ON WH.country_name=HP.country
 left join lifeexpectancy as LE
 ON WH.country_name=LE.countryname
+ORDER BY "happinessscore" DESC

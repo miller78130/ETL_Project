@@ -1,5 +1,5 @@
 CREATE TABLE worldhappinessreport2021(
-	country_name VARCHAR,
+	country VARCHAR,
 	reginal_indicator VARCHAR,
 	ladder_score Numeric,
 	standard_error_of_ladder Numeric,
@@ -17,22 +17,16 @@ CREATE TABLE worldhappinessreport2021(
 
 
 
-CREATE TABLE worldhappinessreport2021(
-	Country_name VARCHAR,
-	Reginal_indicator VARCHAR,
-	Ladder_score Numeric,
-	Standard_error_of_ladder_score Numeric,
-	upperwhisker Numeric,
-	lowerwhisker Numeric,
-	Logged_GDP_per_capita Numeric,
-	Social_support Numeric,
-	Healthy_life_expectancy Numeric,
-	Freedom_to_make_life_choices Numeric,
-	Generosity Numeric,
-	Perceptions_of_corruption Numeric,
-	Ladder_score_in_Dystopia Numeric,
-	Dystopia_plus_residual Numeric 
-
+CREATE TABLE HappinessAlcoholConsumption(
+	country VARCHAR,
+	region VARCHAR,
+	hemisphere Numeric,
+	happinessscore Numeric,
+	hdi Numeric,
+	gdp_percapita Numeric,
+	beer_percapita Numeric,
+	spirit_percapita Numeric,
+	wine_percapita Numeric,
 
 );
 

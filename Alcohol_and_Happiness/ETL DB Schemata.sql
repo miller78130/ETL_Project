@@ -37,6 +37,7 @@ CREATE TABLE LifeExpectancy(
 	
 );
 
+#created this table with pandas 
 
 SELECT LE.countryname, HP.HappinessScore, WH.Healthy_life_expectancy
 FROM worldhappinessreport2021 as WH
@@ -47,6 +48,7 @@ ON WH.country_name=LE.countryname
 ORDER BY "happinessscore" DESC
 
 
+#original join of all 3 tables
 
 SELECT LE.countryname, HP.HappinessScore, WH.Healthy_life_expectancy, LE.year_2019, WH.social_support, WH.Generosity, HP.beer_percapita, HP.spirit_percapita, HP.wine_percapita
 FROM worldhappinessreport2021 as WH
